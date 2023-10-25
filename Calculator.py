@@ -31,13 +31,9 @@ def calculate():
 
     try :
         global expression
-
         total = str(eval(expression))
-
         equation.set(total)
-
         expression= ""
-
     except:
         
         equation.set('error')
@@ -82,7 +78,6 @@ if __name__ == "__main__":
     button2 = tk.Button(root,text="2",command=lambda: press(2),fg='black',bg='white', height=1,width=7)
     button3 = tk.Button(root,text="3",command=lambda: press(3),fg='black',bg='white', height=1,width=7)
     button_subtract = tk.Button(root,text="-",command=lambda: press('-'),fg='black',bg='white', height=1,width=7)
-
 
     # 0 . = +   
     button0 = tk.Button(root,text="0",command=lambda: press(0),fg='black',bg='white', height=1,width=7)
